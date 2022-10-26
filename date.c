@@ -14,7 +14,10 @@ Date *date_create(char *datestr){
     Date *date = malloc(sizeof(date));
     int year, month, day;
     sscanf(datestr, "%d-%d-%d", &year, &month, &day);
+    
     return date;
 }
+
+
 
 
