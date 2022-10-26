@@ -20,9 +20,8 @@ Date *date_create(char *datestr){
 
     return date;
 }
-/*
-1
-*/
+
+int main(){}
 
 
 
