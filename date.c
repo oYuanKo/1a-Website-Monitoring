@@ -48,8 +48,8 @@ int date_compare(Date *date1, Date *date2){
     int d1,d2;
     d1 = date1->year*10000 + date1->month*100 + date1->day;
     d2 = date2->year*10000 + date2->month*100 + date2->day;
-    printf("compare d1: %d and ", d1);
-	printf("d2: %d \n", d2);
+//    printf("compare d1: %d and ", d1);
+//	printf("d2: %d \n", d2);
     if(d1 == d2){
         return 0;
     }else if(d1 > d2){
@@ -66,16 +66,16 @@ void date_destroy(Date *d){
 	free(d);
 }
 
-int main(){
-    printf("%d",date_create("2022-10-26"));
-    return 0;
-}
+//int main(){
+//    printf("%d",date_create("2022-10-26"));
+//    return 0;
+//}
 
-int main(){
-    Date* d =date_create("26/01/2022");
-	Date* d2 = date_duplicate(d);
-    printf("%d %d %d", d2->year,d2->month, d2->day);
-}
+//int main(){
+//    Date* d =date_create("26/01/2022");
+//	Date* d2 = date_duplicate(d);
+//    printf("%d %d %d", d2->year,d2->month, d2->day);
+//}
 
 
 
