@@ -16,7 +16,7 @@ struct date{
  *         NULL if not (syntax error)
  */
 Date *date_create(char *datestr){
-    Date *d = malloc(sizeof(Date));
+    Date *d = malloc(sizeof(d));
     if (d == NULL) {
         return NULL;
     }
@@ -57,7 +57,7 @@ int date_compare(Date *date1, Date *date2){
     }else if (d1 < d2){
         return -1;
     }
-    }
+    
 
 /*
  * date_destroy returns any storage associated with `d' to the system
