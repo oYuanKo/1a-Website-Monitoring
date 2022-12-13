@@ -16,7 +16,7 @@ struct date{
  *         NULL if not (syntax error)
  */
 Date *date_create(char *datestr){
-    Date *d = malloc(sizeof(d));
+    Date *d = malloc(sizeof(Date));
     if (d == NULL) {
         return NULL;
     }
